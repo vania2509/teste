@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <link rel="icon" type="image/ico" href="html.ico">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px 0px;
+            box-shadow: 1px 1px 1px black;
+        }
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            margin: 0px;
+            padding: 4px;
+        }
+        article {
+            background-color: lightgrey;
+        }
+        article > aside {
+            background-color: rgba(155, 151, 151, 0.546);
+        }
+        nav {
+            background-color:rgb(135, 133, 133) ;
+            padding: 3px;
+            box-shadow: 3px 3px 3px rgba(17, 16, 16, 0.393);
+           
+
+        }
+        
+        nav > a {
+            text-decoration: none;
+            color: white;
+            height: bold;
+            margin-right: 20px;
+        }
+
+      nav >a:hover {
+        text-decoration: underline;
+        
+        }
+        footer > p {
+            margin: 0px;
+        }
+        h1 {
+
+        }
+        div#bola {
+            height: 100px;
+            width: 100px;
+            margin:20px;
+            background-color: white;
+            border-radius: 50%;
+
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site </h1>
+        <nav>
+            <a href="#">Opção 1</a>
+            <a href="#">Opção 2</a>
+            <a href="#">Opção 3</a>
+            <a href="#">Opção 4</a>
+            <a href="#">Opção 5</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Esportes, Política e Tecnologia</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, et laboriosam iste nulla ullam earum. Atque quasi, non, suscipit beatae rerum nisi voluptatem tempore qui voluptate architecto odit rem cumque! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro eius recusandae ducimus doloribus, reiciendis ullam, esse non, voluptatibus iure inventore quaerat laudantium nemo ab eum necessitatibus doloremque cupiditate officiis sit.</p>
+                <aside>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+                <h2>Notícias sobre o Mundo</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In deserunt, aspernatur consectetur ullam fugit dicta, debitis temporibus nisi recusandae cum beatae? Beatae veniam atque dolore, sequi facilis culpa doloribus nisi? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias molestias ipsum quam, perspiciatis commodi at pariatur ullam eum illo eius porro harum veritatis quia similique eveniet quis exercitationem placeat enim.</p>
+            <article>
+
+
+            </article>
+
+
+        </section>
+
+    </main>
+    <footer>
+        <p>Desenvolvido pelo CursoemVídeo</p>
+    </footer>  
+    <div id="bola" ></div>
+</body>
+</html>
