@@ -17,9 +17,8 @@ header > h1 {
     text-align: center;
     padding: 10px;
 }
-menu {
+menu#itens {
     display: block;
-     display: none;
 }
 
 menu >ul {
