@@ -5,14 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu Flex Box</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 580px)">
+    <link  rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    
 </head>
 <body>
     <header>
-        <h1>Meu Site</h1>
-        <nav>
+        <h1 >Meu Site</h1>
+        <i id="burguer" class="material-icons" onclick="mostrarMenu()">menu</i>
+        <nav id="menu" >
             <a href="#">Opção 1</a>
-            <a href="@">Opção 2</a>
-            <a href="#">Opção 3</a>
+            <a href="#">Opção 2</a>
             <a href="#">Opção 3</a>
             <a href="#">Opção 4</a>
             <a href="#">Opção 5</a> 
@@ -23,8 +26,17 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia necessitatibus excepturi officia soluta ipsum explicabo provident facilis aliquam suscipit praesentium id dolores nesciunt omnis totam, dolorum, sit dignissimos atque delectus? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus consectetur ab obcaecati officiis cum repellat atque dolor nobis quae quas. Possimus doloribus laboriosam quisquam quia quo sapiente inventore unde voluptate.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium eaque molestiae eveniet alias facere doloribus nihil, sed amet illum voluptatibus, iste commodi, facilis incidunt eum velit excepturi vero. Voluptas, voluptate? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat officiis sunt vitae accusamus obcaecati maiores praesentium sequi aut provident soluta ducimus eos repellendus unde culpa hic incidunt vero, iusto nemo.</p>
 
-
     </main>
+    <script>
+        function mostrarMenu() {
+        tag: var menu = document.getElementById("menu");
+        if (menu.style.display == "none") {
+            menu.style.display = "block" 
+        } else {
+            menu.style.display = "none" 
+        }
+      }
+    </script>
     
 </body>
 </html>
