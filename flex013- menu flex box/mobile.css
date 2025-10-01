@@ -3,7 +3,7 @@
 body {
     background-color: red;
 } 
-header, header > nav {
+header, header > nav#menu {
 flex-flow: column nowrap;
 }
 
@@ -14,12 +14,11 @@ header > nav > a {
     width: 90vw;
 }
 
-header > nav#menu {
-    display: flex;
-    flex-flow: column nowrap;
-    display: none;
+/*header > nav#menu {
+    display: block;
+ } */
     
-}
+
 
 i#burguer {
     flex-basis: 40px;
