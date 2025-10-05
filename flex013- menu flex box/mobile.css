@@ -14,9 +14,9 @@ header > nav > a {
     width: 90vw;
 }
 
-/*header > nav#menu {
-    display: block;
- } */
+header > nav#menu {
+    display: none;
+ } 
     
 
 

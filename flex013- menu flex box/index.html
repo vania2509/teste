@@ -9,7 +9,7 @@
     <link  rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
     
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1 >Meu Site</h1>
         <i id="burguer" class="material-icons" onclick="mostrarMenu()">menu</i>
@@ -28,15 +28,22 @@
 
     </main>
     <script>
-    
         function mostrarMenu() {
-        /*tag: var menu = document.getElementById("menu");*/
-        if (menu.style.display == "none") {
-            menu.style.display = "block" 
-        } else {
+        tag: var menu = document.getElementById("menu");
+        if (menu.style.display == "flex") {
             menu.style.display = "none" 
+        } else {
+            menu.style.display = "flex" 
         }
-      }
+    }
+
+        function mudouTamanho() {
+            if (window.innerWidth >= 580) {
+                menu.style.display = "flex"
+            } else {
+                menu.style.display = "none"
+            }
+        }
     </script>
     
 </body>
